@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A25B7C71F7119D9005BD911 /* QLPMTDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A25B7C61F7119D9005BD911 /* QLPMTDatabase.swift */; };
+		2A2EF0281F7003B50018E129 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2EF0271F7003B50018E129 /* DesignableTextField.swift */; };
+		2A3E24F31F6A5C04007CB786 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E24F21F6A5C04007CB786 /* AppDelegate.swift */; };
+		2A3E24F81F6A5C04007CB786 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A3E24F61F6A5C04007CB786 /* Main.storyboard */; };
+		2A3E24FD1F6A5C04007CB786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A3E24FC1F6A5C04007CB786 /* Assets.xcassets */; };
+		2A3E25001F6A5C04007CB786 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A3E24FE1F6A5C04007CB786 /* LaunchScreen.storyboard */; };
+		2AA776F71F73754B00246383 /* QLPMT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2AA776F51F73754B00246383 /* QLPMT.xcdatamodeld */; };
+		912ADE5D1F7A4EAB00562F2C /* ThemDinhNghiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912ADE5C1F7A4EAA00562F2C /* ThemDinhNghiaViewController.swift */; };
+		912ADE5F1F7A5D3000562F2C /* SuaDinhNghiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912ADE5E1F7A5D3000562F2C /* SuaDinhNghiaViewController.swift */; };
+		912DF80D1F7B5DDC000A4CBF /* LichKhamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912DF8081F7B5DDB000A4CBF /* LichKhamTableViewCell.swift */; };
+		912DF80E1F7B5DDC000A4CBF /* LichKhamObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912DF8091F7B5DDB000A4CBF /* LichKhamObj.swift */; };
+		912DF8101F7B5DDC000A4CBF /* LichKhamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912DF80B1F7B5DDC000A4CBF /* LichKhamTableViewController.swift */; };
+		912DF8111F7B5DDC000A4CBF /* ThemLichKhamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912DF80C1F7B5DDC000A4CBF /* ThemLichKhamViewController.swift */; };
+		912ED46E1F8367DC0070766C /* DinhNghiaGiaTriObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912ED46D1F8367DB0070766C /* DinhNghiaGiaTriObj.swift */; };
+		914540161F7B90310045B687 /* Thuoc+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914540141F7B90310045B687 /* Thuoc+CoreDataClass.swift */; };
+		914540171F7B90310045B687 /* Thuoc+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914540151F7B90310045B687 /* Thuoc+CoreDataProperties.swift */; };
+		9149465F1F8386A80090A506 /* DinhNghiaGiaTriObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9149465E1F8386A80090A506 /* DinhNghiaGiaTriObject.swift */; };
+		916249061F84A2B000294709 /* SuaGiaTriMacDinhViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916249031F84A2B000294709 /* SuaGiaTriMacDinhViewController.swift */; };
+		916249071F84A2B000294709 /* GiaTriMacDinhTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916249041F84A2B000294709 /* GiaTriMacDinhTableViewController.swift */; };
+		916249081F84A2B000294709 /* ThemGiaTriMacDinhViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916249051F84A2B000294709 /* ThemGiaTriMacDinhViewController.swift */; };
+		9162490C1F84A3ED00294709 /* GiaTriMacDinhObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162490B1F84A3ED00294709 /* GiaTriMacDinhObj.swift */; };
+		9162490E1F84A40C00294709 /* GiaTriMacDinhTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162490D1F84A40C00294709 /* GiaTriMacDinhTableViewCell.swift */; };
+		917667211F7CA3A1000D4A39 /* EditLichKhamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917667201F7CA3A1000D4A39 /* EditLichKhamViewController.swift */; };
+		9187DFC01F85D53F00F429FC /* GiaTriMacDinh+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187DFBE1F85D53F00F429FC /* GiaTriMacDinh+CoreDataClass.swift */; };
+		9187DFC11F85D53F00F429FC /* GiaTriMacDinh+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187DFBF1F85D53F00F429FC /* GiaTriMacDinh+CoreDataProperties.swift */; };
+		91C2EA511F78DC6A008065A7 /* DinhNghiaQuyDinhTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C2EA501F78DC6A008065A7 /* DinhNghiaQuyDinhTableViewController.swift */; };
+		91C2EA541F78DE77008065A7 /* DinhNghiaGiaTri+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C2EA521F78DE77008065A7 /* DinhNghiaGiaTri+CoreDataClass.swift */; };
+		91C2EA551F78DE77008065A7 /* DinhNghiaGiaTri+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C2EA531F78DE77008065A7 /* DinhNghiaGiaTri+CoreDataProperties.swift */; };
+		91C2EA571F78DF33008065A7 /* DinhNghiaQuyDinhTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C2EA561F78DF33008065A7 /* DinhNghiaQuyDinhTableViewCell.swift */; };
+		91EA971E1F77788900FCE9A0 /* DangNhapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EA971D1F77788900FCE9A0 /* DangNhapViewController.swift */; };
+		91EA97201F77792300FCE9A0 /* TaiKhoan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EA971F1F77792300FCE9A0 /* TaiKhoan.swift */; };
+		91EA97221F77794100FCE9A0 /* TrangChuCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EA97211F77794100FCE9A0 /* TrangChuCollectionViewController.swift */; };
+		91EA97241F77795E00FCE9A0 /* TrangChuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EA97231F77795E00FCE9A0 /* TrangChuCollectionViewCell.swift */; };
+		91EA972D1F777A0100FCE9A0 /* ThemThuocViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EA97271F777A0100FCE9A0 /* ThemThuocViewController.swift */; };
+		91EA972F1F777A0100FCE9A0 /* ThuocTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EA97291F777A0100FCE9A0 /* ThuocTableViewCell.swift */; };
+		91EA97311F777A0100FCE9A0 /* ThuocTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EA972B1F777A0100FCE9A0 /* ThuocTableViewController.swift */; };
+		91EA97321F777A0100FCE9A0 /* SuaThuocViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EA972C1F777A0100FCE9A0 /* SuaThuocViewController.swift */; };
+		91EA973A1F777A5900FCE9A0 /* LichKham+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EA97331F777A5900FCE9A0 /* LichKham+CoreDataProperties.swift */; };
+		91EA973E1F777A5900FCE9A0 /* LichKham+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EA97371F777A5900FCE9A0 /* LichKham+CoreDataClass.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A25B7C61F7119D9005BD911 /* QLPMTDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLPMTDatabase.swift; sourceTree = "<group>"; };
+		2A2EF0271F7003B50018E129 /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		2A3E24EF1F6A5C04007CB786 /* QLPMT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QLPMT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A3E24F21F6A5C04007CB786 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2A3E24F71F6A5C04007CB786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A3E24FC1F6A5C04007CB786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A3E24FF1F6A5C04007CB786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2A3E25011F6A5C04007CB786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AA776F61F73754B00246383 /* QLPMT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QLPMT.xcdatamodel; sourceTree = "<group>"; };
+		912ADE5C1F7A4EAA00562F2C /* ThemDinhNghiaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemDinhNghiaViewController.swift; sourceTree = "<group>"; };
+		912ADE5E1F7A5D3000562F2C /* SuaDinhNghiaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuaDinhNghiaViewController.swift; sourceTree = "<group>"; };
+		912DF8081F7B5DDB000A4CBF /* LichKhamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LichKhamTableViewCell.swift; sourceTree = "<group>"; };
+		912DF8091F7B5DDB000A4CBF /* LichKhamObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LichKhamObj.swift; sourceTree = "<group>"; };
+		912DF80B1F7B5DDC000A4CBF /* LichKhamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LichKhamTableViewController.swift; sourceTree = "<group>"; };
+		912DF80C1F7B5DDC000A4CBF /* ThemLichKhamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemLichKhamViewController.swift; sourceTree = "<group>"; };
+		912ED46D1F8367DB0070766C /* DinhNghiaGiaTriObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinhNghiaGiaTriObj.swift; sourceTree = "<group>"; };
+		914540141F7B90310045B687 /* Thuoc+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Thuoc+CoreDataClass.swift"; path = "Thuốc MVC/Thuoc+CoreDataClass.swift"; sourceTree = "<group>"; };
+		914540151F7B90310045B687 /* Thuoc+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Thuoc+CoreDataProperties.swift"; path = "Thuốc MVC/Thuoc+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9149465E1F8386A80090A506 /* DinhNghiaGiaTriObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinhNghiaGiaTriObject.swift; sourceTree = "<group>"; };
+		914FDEB61F775EAE00FAE77F /* QLPMT 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "QLPMT 4.xcdatamodel"; sourceTree = "<group>"; };
+		916249031F84A2B000294709 /* SuaGiaTriMacDinhViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuaGiaTriMacDinhViewController.swift; sourceTree = "<group>"; };
+		916249041F84A2B000294709 /* GiaTriMacDinhTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiaTriMacDinhTableViewController.swift; sourceTree = "<group>"; };
+		916249051F84A2B000294709 /* ThemGiaTriMacDinhViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemGiaTriMacDinhViewController.swift; sourceTree = "<group>"; };
+		9162490B1F84A3ED00294709 /* GiaTriMacDinhObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiaTriMacDinhObj.swift; sourceTree = "<group>"; };
+		9162490D1F84A40C00294709 /* GiaTriMacDinhTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiaTriMacDinhTableViewCell.swift; sourceTree = "<group>"; };
+		917667201F7CA3A1000D4A39 /* EditLichKhamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLichKhamViewController.swift; sourceTree = "<group>"; };
+		9187DFBE1F85D53F00F429FC /* GiaTriMacDinh+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GiaTriMacDinh+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9187DFBF1F85D53F00F429FC /* GiaTriMacDinh+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GiaTriMacDinh+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		919E9C2E1F7684020091E156 /* QLPMT 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "QLPMT 3.xcdatamodel"; sourceTree = "<group>"; };
+		91C2EA501F78DC6A008065A7 /* DinhNghiaQuyDinhTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinhNghiaQuyDinhTableViewController.swift; sourceTree = "<group>"; };
+		91C2EA521F78DE77008065A7 /* DinhNghiaGiaTri+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DinhNghiaGiaTri+CoreDataClass.swift"; sourceTree = "<group>"; };
+		91C2EA531F78DE77008065A7 /* DinhNghiaGiaTri+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DinhNghiaGiaTri+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		91C2EA561F78DF33008065A7 /* DinhNghiaQuyDinhTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinhNghiaQuyDinhTableViewCell.swift; sourceTree = "<group>"; };
+		91EA971D1F77788900FCE9A0 /* DangNhapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DangNhapViewController.swift; path = "Tài khoản MVC/DangNhapViewController.swift"; sourceTree = "<group>"; };
+		91EA971F1F77792300FCE9A0 /* TaiKhoan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaiKhoan.swift; path = "Tài khoản MVC/TaiKhoan.swift"; sourceTree = "<group>"; };
+		91EA97211F77794100FCE9A0 /* TrangChuCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrangChuCollectionViewController.swift; path = "Trang chủ MVC/TrangChuCollectionViewController.swift"; sourceTree = "<group>"; };
+		91EA97231F77795E00FCE9A0 /* TrangChuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrangChuCollectionViewCell.swift; path = "Trang chủ MVC/TrangChuCollectionViewCell.swift"; sourceTree = "<group>"; };
+		91EA97271F777A0100FCE9A0 /* ThemThuocViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThemThuocViewController.swift; path = "Thuốc MVC/ThemThuocViewController.swift"; sourceTree = "<group>"; };
+		91EA97291F777A0100FCE9A0 /* ThuocTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThuocTableViewCell.swift; path = "Thuốc MVC/ThuocTableViewCell.swift"; sourceTree = "<group>"; };
+		91EA972B1F777A0100FCE9A0 /* ThuocTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThuocTableViewController.swift; path = "Thuốc MVC/ThuocTableViewController.swift"; sourceTree = "<group>"; };
+		91EA972C1F777A0100FCE9A0 /* SuaThuocViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SuaThuocViewController.swift; path = "Thuốc MVC/SuaThuocViewController.swift"; sourceTree = "<group>"; };
+		91EA97331F777A5900FCE9A0 /* LichKham+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "LichKham+CoreDataProperties.swift"; path = "Lịch khám MVC/LichKham+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		91EA97371F777A5900FCE9A0 /* LichKham+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "LichKham+CoreDataClass.swift"; path = "Lịch khám MVC/LichKham+CoreDataClass.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A3E24EC1F6A5C04007CB786 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A0F7FAB1F6E3F6F00F8BFDB /* Đăng nhập MVC */ = {
+			isa = PBXGroup;
+			children = (
+				91EA971F1F77792300FCE9A0 /* TaiKhoan.swift */,
+				91EA971D1F77788900FCE9A0 /* DangNhapViewController.swift */,
+			);
+			name = "Đăng nhập MVC";
+			sourceTree = "<group>";
+		};
+		2A2A9B481F73B61900886FD5 /* Lịch Khám MVC */ = {
+			isa = PBXGroup;
+			children = (
+				917667201F7CA3A1000D4A39 /* EditLichKhamViewController.swift */,
+				912DF8091F7B5DDB000A4CBF /* LichKhamObj.swift */,
+				912DF8081F7B5DDB000A4CBF /* LichKhamTableViewCell.swift */,
+				912DF80B1F7B5DDC000A4CBF /* LichKhamTableViewController.swift */,
+				912DF80C1F7B5DDC000A4CBF /* ThemLichKhamViewController.swift */,
+				91EA97371F777A5900FCE9A0 /* LichKham+CoreDataClass.swift */,
+				91EA97331F777A5900FCE9A0 /* LichKham+CoreDataProperties.swift */,
+			);
+			name = "Lịch Khám MVC";
+			sourceTree = "<group>";
+		};
+		2A2EF02B1F7005280018E129 /* Class thiết kế UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				2A2EF0271F7003B50018E129 /* DesignableTextField.swift */,
+			);
+			name = "Class thiết kế UITextField";
+			sourceTree = "<group>";
+		};
+		2A3E24E61F6A5C04007CB786 = {
+			isa = PBXGroup;
+			children = (
+				2A3E24F11F6A5C04007CB786 /* QLPMT */,
+				2A3E24F01F6A5C04007CB786 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A3E24F01F6A5C04007CB786 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E24EF1F6A5C04007CB786 /* QLPMT.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A3E24F11F6A5C04007CB786 /* QLPMT */ = {
+			isa = PBXGroup;
+			children = (
+				912DF8071F7B5D7A000A4CBF /* Giá Trị Mặc Định MVC */,
+				912DF8011F7B58DC000A4CBF /* Định nghĩa giá trị MVC */,
+				2A2A9B481F73B61900886FD5 /* Lịch Khám MVC */,
+				2A5D50771F721244000F3FB8 /* Thuốc MVC */,
+				2A7DAB0C1F70C4F8007AA916 /* Trang chủ MVC */,
+				2A0F7FAB1F6E3F6F00F8BFDB /* Đăng nhập MVC */,
+				2A2EF02B1F7005280018E129 /* Class thiết kế UITextField */,
+				2A5D50781F721281000F3FB8 /* Database */,
+				2A3E24F61F6A5C04007CB786 /* Main.storyboard */,
+				91EA97421F777AE700FCE9A0 /* Supporting files */,
+			);
+			path = QLPMT;
+			sourceTree = "<group>";
+		};
+		2A5D50771F721244000F3FB8 /* Thuốc MVC */ = {
+			isa = PBXGroup;
+			children = (
+				914540141F7B90310045B687 /* Thuoc+CoreDataClass.swift */,
+				914540151F7B90310045B687 /* Thuoc+CoreDataProperties.swift */,
+				91EA972C1F777A0100FCE9A0 /* SuaThuocViewController.swift */,
+				91EA97271F777A0100FCE9A0 /* ThemThuocViewController.swift */,
+				91EA97291F777A0100FCE9A0 /* ThuocTableViewCell.swift */,
+				91EA972B1F777A0100FCE9A0 /* ThuocTableViewController.swift */,
+			);
+			name = "Thuốc MVC";
+			sourceTree = "<group>";
+		};
+		2A5D50781F721281000F3FB8 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				2AA776F51F73754B00246383 /* QLPMT.xcdatamodeld */,
+				2A25B7C61F7119D9005BD911 /* QLPMTDatabase.swift */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		2A7DAB0C1F70C4F8007AA916 /* Trang chủ MVC */ = {
+			isa = PBXGroup;
+			children = (
+				91EA97231F77795E00FCE9A0 /* TrangChuCollectionViewCell.swift */,
+				91EA97211F77794100FCE9A0 /* TrangChuCollectionViewController.swift */,
+			);
+			name = "Trang chủ MVC";
+			sourceTree = "<group>";
+		};
+		912DF8011F7B58DC000A4CBF /* Định nghĩa giá trị MVC */ = {
+			isa = PBXGroup;
+			children = (
+				912ADE5E1F7A5D3000562F2C /* SuaDinhNghiaViewController.swift */,
+				912ADE5C1F7A4EAA00562F2C /* ThemDinhNghiaViewController.swift */,
+				91C2EA561F78DF33008065A7 /* DinhNghiaQuyDinhTableViewCell.swift */,
+				91C2EA501F78DC6A008065A7 /* DinhNghiaQuyDinhTableViewController.swift */,
+				91C2EA521F78DE77008065A7 /* DinhNghiaGiaTri+CoreDataClass.swift */,
+				91C2EA531F78DE77008065A7 /* DinhNghiaGiaTri+CoreDataProperties.swift */,
+				912ED46D1F8367DB0070766C /* DinhNghiaGiaTriObj.swift */,
+				9149465E1F8386A80090A506 /* DinhNghiaGiaTriObject.swift */,
+			);
+			name = "Định nghĩa giá trị MVC";
+			sourceTree = "<group>";
+		};
+		912DF8071F7B5D7A000A4CBF /* Giá Trị Mặc Định MVC */ = {
+			isa = PBXGroup;
+			children = (
+				9187DFBE1F85D53F00F429FC /* GiaTriMacDinh+CoreDataClass.swift */,
+				9187DFBF1F85D53F00F429FC /* GiaTriMacDinh+CoreDataProperties.swift */,
+				9162490D1F84A40C00294709 /* GiaTriMacDinhTableViewCell.swift */,
+				9162490B1F84A3ED00294709 /* GiaTriMacDinhObj.swift */,
+				916249041F84A2B000294709 /* GiaTriMacDinhTableViewController.swift */,
+				916249031F84A2B000294709 /* SuaGiaTriMacDinhViewController.swift */,
+				916249051F84A2B000294709 /* ThemGiaTriMacDinhViewController.swift */,
+			);
+			name = "Giá Trị Mặc Định MVC";
+			sourceTree = "<group>";
+		};
+		91EA97421F777AE700FCE9A0 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E24F21F6A5C04007CB786 /* AppDelegate.swift */,
+				2A3E24FC1F6A5C04007CB786 /* Assets.xcassets */,
+				2A3E24FE1F6A5C04007CB786 /* LaunchScreen.storyboard */,
+				2A3E25011F6A5C04007CB786 /* Info.plist */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A3E24EE1F6A5C04007CB786 /* QLPMT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A3E25041F6A5C04007CB786 /* Build configuration list for PBXNativeTarget "QLPMT" */;
+			buildPhases = (
+				2A3E24EB1F6A5C04007CB786 /* Sources */,
+				2A3E24EC1F6A5C04007CB786 /* Frameworks */,
+				2A3E24ED1F6A5C04007CB786 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QLPMT;
+			productName = QLPMT;
+			productReference = 2A3E24EF1F6A5C04007CB786 /* QLPMT.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A3E24E71F6A5C04007CB786 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Khanh Hoang";
+				TargetAttributes = {
+					2A3E24EE1F6A5C04007CB786 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = DU5JBY359D;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2A3E24EA1F6A5C04007CB786 /* Build configuration list for PBXProject "QLPMT" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A3E24E61F6A5C04007CB786;
+			productRefGroup = 2A3E24F01F6A5C04007CB786 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A3E24EE1F6A5C04007CB786 /* QLPMT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A3E24ED1F6A5C04007CB786 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A3E25001F6A5C04007CB786 /* LaunchScreen.storyboard in Resources */,
+				2A3E24FD1F6A5C04007CB786 /* Assets.xcassets in Resources */,
+				2A3E24F81F6A5C04007CB786 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A3E24EB1F6A5C04007CB786 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912DF8101F7B5DDC000A4CBF /* LichKhamTableViewController.swift in Sources */,
+				912ED46E1F8367DC0070766C /* DinhNghiaGiaTriObj.swift in Sources */,
+				912DF80E1F7B5DDC000A4CBF /* LichKhamObj.swift in Sources */,
+				2AA776F71F73754B00246383 /* QLPMT.xcdatamodeld in Sources */,
+				9162490E1F84A40C00294709 /* GiaTriMacDinhTableViewCell.swift in Sources */,
+				2A2EF0281F7003B50018E129 /* DesignableTextField.swift in Sources */,
+				91C2EA571F78DF33008065A7 /* DinhNghiaQuyDinhTableViewCell.swift in Sources */,
+				9162490C1F84A3ED00294709 /* GiaTriMacDinhObj.swift in Sources */,
+				91EA972F1F777A0100FCE9A0 /* ThuocTableViewCell.swift in Sources */,
+				91EA973A1F777A5900FCE9A0 /* LichKham+CoreDataProperties.swift in Sources */,
+				912ADE5D1F7A4EAB00562F2C /* ThemDinhNghiaViewController.swift in Sources */,
+				91EA97201F77792300FCE9A0 /* TaiKhoan.swift in Sources */,
+				912DF8111F7B5DDC000A4CBF /* ThemLichKhamViewController.swift in Sources */,
+				916249061F84A2B000294709 /* SuaGiaTriMacDinhViewController.swift in Sources */,
+				91EA971E1F77788900FCE9A0 /* DangNhapViewController.swift in Sources */,
+				914540171F7B90310045B687 /* Thuoc+CoreDataProperties.swift in Sources */,
+				91C2EA551F78DE77008065A7 /* DinhNghiaGiaTri+CoreDataProperties.swift in Sources */,
+				9187DFC01F85D53F00F429FC /* GiaTriMacDinh+CoreDataClass.swift in Sources */,
+				917667211F7CA3A1000D4A39 /* EditLichKhamViewController.swift in Sources */,
+				91EA97241F77795E00FCE9A0 /* TrangChuCollectionViewCell.swift in Sources */,
+				91EA97311F777A0100FCE9A0 /* ThuocTableViewController.swift in Sources */,
+				91EA97321F777A0100FCE9A0 /* SuaThuocViewController.swift in Sources */,
+				916249071F84A2B000294709 /* GiaTriMacDinhTableViewController.swift in Sources */,
+				91EA972D1F777A0100FCE9A0 /* ThemThuocViewController.swift in Sources */,
+				2A3E24F31F6A5C04007CB786 /* AppDelegate.swift in Sources */,
+				91EA973E1F777A5900FCE9A0 /* LichKham+CoreDataClass.swift in Sources */,
+				916249081F84A2B000294709 /* ThemGiaTriMacDinhViewController.swift in Sources */,
+				912ADE5F1F7A5D3000562F2C /* SuaDinhNghiaViewController.swift in Sources */,
+				9187DFC11F85D53F00F429FC /* GiaTriMacDinh+CoreDataProperties.swift in Sources */,
+				9149465F1F8386A80090A506 /* DinhNghiaGiaTriObject.swift in Sources */,
+				91C2EA511F78DC6A008065A7 /* DinhNghiaQuyDinhTableViewController.swift in Sources */,
+				91C2EA541F78DE77008065A7 /* DinhNghiaGiaTri+CoreDataClass.swift in Sources */,
+				912DF80D1F7B5DDC000A4CBF /* LichKhamTableViewCell.swift in Sources */,
+				91EA97221F77794100FCE9A0 /* TrangChuCollectionViewController.swift in Sources */,
+				2A25B7C71F7119D9005BD911 /* QLPMTDatabase.swift in Sources */,
+				914540161F7B90310045B687 /* Thuoc+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2A3E24F61F6A5C04007CB786 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A3E24F71F6A5C04007CB786 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2A3E24FE1F6A5C04007CB786 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A3E24FF1F6A5C04007CB786 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A3E25021F6A5C04007CB786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A3E25031F6A5C04007CB786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A3E25051F6A5C04007CB786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DU5JBY359D;
+				INFOPLIST_FILE = QLPMT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GrayBuster.QLPMT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2A3E25061F6A5C04007CB786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DU5JBY359D;
+				INFOPLIST_FILE = QLPMT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GrayBuster.QLPMT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A3E24EA1F6A5C04007CB786 /* Build configuration list for PBXProject "QLPMT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A3E25021F6A5C04007CB786 /* Debug */,
+				2A3E25031F6A5C04007CB786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2A3E25041F6A5C04007CB786 /* Build configuration list for PBXNativeTarget "QLPMT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A3E25051F6A5C04007CB786 /* Debug */,
+				2A3E25061F6A5C04007CB786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2AA776F51F73754B00246383 /* QLPMT.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				914FDEB61F775EAE00FAE77F /* QLPMT 4.xcdatamodel */,
+				919E9C2E1F7684020091E156 /* QLPMT 3.xcdatamodel */,
+				2AA776F61F73754B00246383 /* QLPMT.xcdatamodel */,
+			);
+			currentVersion = 2AA776F61F73754B00246383 /* QLPMT.xcdatamodel */;
+			path = QLPMT.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2A3E24E71F6A5C04007CB786 /* Project object */;
+}

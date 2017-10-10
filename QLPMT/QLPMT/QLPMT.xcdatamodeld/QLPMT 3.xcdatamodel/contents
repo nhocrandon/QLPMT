@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BenhAn" representedClassName=".BenhAn" syncable="YES">
+        <attribute name="chuanDoan" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="maBenhAn" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ngayKham" optional="YES" attributeType="Date" minDateTimeInterval="527065560" maxDateTimeInterval="536403540" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="tinhTrang" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="benhNhan" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BenhNhan" inverseName="nguoiKhamBenh" inverseEntity="BenhNhan" syncable="YES"/>
+        <relationship name="donThuoc" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DonThuoc" inverseName="benhAn" inverseEntity="DonThuoc" syncable="YES"/>
+    </entity>
+    <entity name="BenhNhan" representedClassName=".BenhNhan" syncable="YES">
+        <attribute name="diaChi" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gioiTinh" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="maBenhNhan" attributeType="Integer 32" defaultValueString="1" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="key" value="value"/>
+            </userInfo>
+        </attribute>
+        <attribute name="maLoaiKH" optional="YES" attributeType="Integer 32" defaultValueString="1" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ngaySinh" optional="YES" attributeType="Date" minDateTimeInterval="-640540380" maxDateTimeInterval="536400420" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="soDienThoai" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tenBenhNhan" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="nguoiKhamBenh" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BenhAn" inverseName="benhNhan" inverseEntity="BenhAn" syncable="YES"/>
+        <relationship name="nguoiThanhToan" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HoaDon" inverseName="nguoiThanhToan" inverseEntity="HoaDon" syncable="YES"/>
+    </entity>
+    <entity name="ChiTietDonThuoc" representedClassName=".ChiTietDonThuoc" syncable="YES">
+        <attribute name="ghiChu" optional="YES" attributeType="String" maxValueString="100" syncable="YES"/>
+        <attribute name="maDonThuoc" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="soLuong" optional="YES" attributeType="Integer 32" defaultValueString="1" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="chiTietThuoc" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Thuoc" inverseName="chiTietDonThuoc" inverseEntity="Thuoc" syncable="YES"/>
+        <relationship name="donThuoc" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DonThuoc" inverseName="chiTietDonThuoc" inverseEntity="DonThuoc" syncable="YES"/>
+    </entity>
+    <entity name="ChiTietHoaDon" representedClassName=".ChiTietHoaDon" syncable="YES">
+        <attribute name="maHoaDon" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="soLuong" optional="YES" attributeType="Integer 32" defaultValueString="1" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="tongCong" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="hoaDon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HoaDon" inverseName="chiTietHoaDon" inverseEntity="HoaDon" syncable="YES"/>
+        <relationship name="thuoc" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Thuoc" inverseName="chiTietHoaDon" inverseEntity="Thuoc" syncable="YES"/>
+    </entity>
+    <entity name="DinhNghiaGiaTri" representedClassName=".DinhNghiaGiaTri" syncable="YES">
+        <attribute name="ghiChu" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="maDinhNghia" optional="YES" attributeType="Integer 32" defaultValueString="1" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="tenDinhNghia" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="giaTriMacDinh" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GiaTriMacDinh" inverseName="dinhNghiaGiaTri" inverseEntity="GiaTriMacDinh" syncable="YES"/>
+    </entity>
+    <entity name="DonThuoc" representedClassName=".DonThuoc" syncable="YES">
+        <attribute name="maDonThuoc" optional="YES" attributeType="Integer 32" defaultValueString="1" usesScalarValueType="YES" customClassName="." syncable="YES"/>
+        <attribute name="ngayCapThuoc" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="benhAn" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BenhAn" inverseName="donThuoc" inverseEntity="BenhAn" syncable="YES"/>
+        <relationship name="chiTietDonThuoc" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ChiTietDonThuoc" inverseName="donThuoc" inverseEntity="ChiTietDonThuoc" syncable="YES"/>
+    </entity>
+    <entity name="GiaTriMacDinh" representedClassName=".GiaTriMacDinh" syncable="YES">
+        <attribute name="giaTri" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="maGiaTri" optional="YES" attributeType="String" maxValueString="100" syncable="YES"/>
+        <relationship name="dinhNghiaGiaTri" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DinhNghiaGiaTri" inverseName="giaTriMacDinh" inverseEntity="DinhNghiaGiaTri" syncable="YES"/>
+        <relationship name="lichKham" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LichKham" inverseName="phiKhamBenh" inverseEntity="LichKham" syncable="YES"/>
+        <relationship name="loaiThuoc" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Thuoc" inverseName="giaTriLoaiThuoc" inverseEntity="Thuoc" syncable="YES"/>
+    </entity>
+    <entity name="HoaDon" representedClassName=".HoaDon" syncable="YES">
+        <attribute name="maHoaDon" optional="YES" attributeType="Integer 32" defaultValueString="1" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ngayLap" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="tongTien" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="billLichKham" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LichKham" inverseName="lichKhamHoaDon" inverseEntity="LichKham" syncable="YES"/>
+        <relationship name="chiTietHoaDon" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ChiTietHoaDon" inverseName="hoaDon" inverseEntity="ChiTietHoaDon" syncable="YES"/>
+        <relationship name="nguoiThanhToan" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BenhNhan" inverseName="nguoiThanhToan" inverseEntity="BenhNhan" syncable="YES"/>
+    </entity>
+    <entity name="LichKham" representedClassName=".LichKham" syncable="YES">
+        <attribute name="ghiChu" optional="YES" attributeType="String" maxValueString="100" syncable="YES"/>
+        <attribute name="maLichKham" optional="YES" attributeType="Integer 32" defaultValueString="1" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ngayKham" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="tenKhachHang" optional="YES" attributeType="String" maxValueString="100" syncable="YES"/>
+        <attribute name="tinhTrang" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="lichKhamHoaDon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HoaDon" inverseName="billLichKham" inverseEntity="HoaDon" syncable="YES"/>
+        <relationship name="phiKhamBenh" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GiaTriMacDinh" inverseName="lichKham" inverseEntity="GiaTriMacDinh" syncable="YES"/>
+    </entity>
+    <entity name="Thuoc" representedClassName=".Thuoc" syncable="YES">
+        <attribute name="donGia" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="donVi" optional="YES" attributeType="String" minValueString="0" maxValueString="50" syncable="YES"/>
+        <attribute name="loaiThuoc" optional="YES" attributeType="String" maxValueString="100" syncable="YES"/>
+        <attribute name="maThuoc" optional="YES" attributeType="Integer 32" defaultValueString="1" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="soLuongTon" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="tenThuoc" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="chiTietDonThuoc" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChiTietDonThuoc" inverseName="chiTietThuoc" inverseEntity="ChiTietDonThuoc" syncable="YES"/>
+        <relationship name="chiTietHoaDon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChiTietHoaDon" inverseName="thuoc" inverseEntity="ChiTietHoaDon" syncable="YES"/>
+        <relationship name="giaTriLoaiThuoc" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GiaTriMacDinh" inverseName="loaiThuoc" inverseEntity="GiaTriMacDinh" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BenhAn" positionX="-4205" positionY="-774" width="128" height="133"/>
+        <element name="BenhNhan" positionX="-4419" positionY="-774" width="119" height="178"/>
+        <element name="ChiTietDonThuoc" positionX="-4061" positionY="-585" width="128" height="118"/>
+        <element name="ChiTietHoaDon" positionX="-4266" positionY="-202" width="128" height="118"/>
+        <element name="DinhNghiaGiaTri" positionX="-4439" positionY="-193" width="128" height="103"/>
+        <element name="DonThuoc" positionX="-4248" positionY="-540" width="128" height="103"/>
+        <element name="GiaTriMacDinh" positionX="-4482" positionY="-355" width="128" height="118"/>
+        <element name="HoaDon" positionX="-4248" positionY="-387" width="128" height="133"/>
+        <element name="LichKham" positionX="-4475" positionY="-531" width="128" height="148"/>
+        <element name="Thuoc" positionX="-3998" positionY="-387" width="128" height="178"/>
+    </elements>
+</model>
